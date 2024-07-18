@@ -8,7 +8,7 @@ import { Router } from './router'
 ReactDOM.hydrateRoot(
   document.getElementById('root') as HTMLElement,
   <React.StrictMode>
-    <HashRouter>
+    <HashRouter basename= {  import.meta.env.DEV ? '/' : '/crochet-webapp/' }>
         <Router />
     </HashRouter>
   </React.StrictMode>

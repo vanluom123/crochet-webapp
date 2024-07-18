@@ -7,12 +7,15 @@ interface IRenderProps {
   path: string;
 }
 
-export function render({path}: IRenderProps) {
+export function render({ path }: IRenderProps) {
   const html = ReactDOMServer.renderToString(
     <React.StrictMode>
-        <StaticRouter location={path}>
-            <Router />
-        </StaticRouter>
+      <StaticRouter
+        location={path}
+        basename={import.meta.env.DEV ? '/' : '/crochet-webapp/'}
+      >
+        <Router />
+      </StaticRouter>
     </React.StrictMode>
   )
   return { html }
