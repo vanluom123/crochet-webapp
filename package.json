@@ -31,5 +31,6 @@
     "typescript": "^5.2.2",
     "vite": "^5.3.1",
     "vite-plugin-gh-pages": "^0.4.1"
-  }
+  },
+  "homepage": "https://github.com/vanluom123/crochet-webapp/"
 }
