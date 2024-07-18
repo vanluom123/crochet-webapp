@@ -29,7 +29,14 @@ const Router = () => {
 };
 function render({ path }) {
   const html = ReactDOMServer.renderToString(
-    /* @__PURE__ */ jsx(React.StrictMode, { children: /* @__PURE__ */ jsx(StaticRouter, { location: path, children: /* @__PURE__ */ jsx(Router, {}) }) })
+    /* @__PURE__ */ jsx(React.StrictMode, { children: /* @__PURE__ */ jsx(
+      StaticRouter,
+      {
+        location: path,
+        basename: "/crochet-webapp/",
+        children: /* @__PURE__ */ jsx(Router, {})
+      }
+    ) })
   );
   return { html };
 }
