@@ -1,14 +1,14 @@
 {
   "name": "crochet-webapp",
+  "homepage": "https://github.com/vanluom123/crochet-webapp/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "node server",
-    "build": "npm run build:client && npm run build:server",
-    "preview": "cross-env NODE_ENV=production node server",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
   },
   "dependencies": {
     "express": "^4.19.2",
@@ -29,6 +29,5 @@
     "typescript": "^5.2.2",
     "vite": "^5.3.1",
     "vite-plugin-gh-pages": "^0.4.1"
-  },
-  "homepage": "https://github.com/vanluom123/crochet-webapp/"
+  }
 }
