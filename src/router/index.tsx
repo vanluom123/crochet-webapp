@@ -21,7 +21,8 @@ export const router = createHashRouter([
     ]
   },
   
-], {basename: '/crochet-webapp/'}
+],
+//  {basename: import.meta.env.DEV ? '/' : '/crochet-webapp/'}
 );
 
 // eslint-disable-next-line @typescript-eslint/explicit-function-return-type
