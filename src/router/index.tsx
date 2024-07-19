@@ -5,31 +5,17 @@ import { Route, Routes } from 'react-router-dom';
 
 import Contact from '../pages/contact/Contact';
 import Home from '../pages/home/Home';
+import App from '../App';
 
-
-// export const router =  createHashRouter([
-
-//   {
-//     path: '/',
-//     element: <App />,
-//     children:[
-//       {
-//         path: '/contact',
-//         element: <Contact />,
-//       },
-//       {
-//         path: "/",
-//         element: <Home />,
-//       }
-//     ]
-//   }
-// ]) ;
-
-export const Router = () => {
+const RoutesComponent = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/contact" element={<Contact />} />
+      <Route path='/' element={<App />}>
+        <Route index element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+      </Route>
     </Routes>
   );
 };
+
+export default RoutesComponent;
