@@ -1,6 +1,7 @@
 {
   "name": "crochet-webapp",
   "private": true,
+  "homepage": "https://vanluom123.github.io/crochet-webapp/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
