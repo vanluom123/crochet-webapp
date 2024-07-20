@@ -1,0 +1,29 @@
+{
+  "\u0000vite:asset:public/vite.svg": [
+    "/assets/react-CHdo91hT.svg"
+  ],
+  "src/App.css": [
+    "/assets/react-CHdo91hT.svg"
+  ],
+  "src/App.tsx": [
+    "/assets/react-CHdo91hT.svg"
+  ],
+  "src/assets/react.svg": [
+    "/assets/react-CHdo91hT.svg"
+  ],
+  "src/components/AppBar/AppBar.tsx": [
+    "/assets/react-CHdo91hT.svg"
+  ],
+  "src/entry-server.tsx": [
+    "/assets/react-CHdo91hT.svg"
+  ],
+  "src/pages/contact/Contact.tsx": [
+    "/assets/react-CHdo91hT.svg"
+  ],
+  "src/pages/home/Home.tsx": [
+    "/assets/react-CHdo91hT.svg"
+  ],
+  "src/router/index.tsx": [
+    "/assets/react-CHdo91hT.svg"
+  ]
+}
