@@ -1,6 +1,6 @@
 import react from '@vitejs/plugin-react'
-import ssr from 'vike/plugin'
+import {defineConfig} from "vite";
 
-export default {
-  plugins: [react(), ssr()]
-}
+export default defineConfig({
+  plugins: [react()]
+})
