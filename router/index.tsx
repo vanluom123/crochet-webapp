@@ -3,8 +3,8 @@ import { Route, Routes } from 'react-router-dom';
 
 // import { createHashRouter } from 'react-router-dom';
 
-import Contact from '../pages/contact/Contact';
-import Home from '../pages/home/Home';
+import Contact from '../src/pages/contact/Contact';
+import Home from '../src/pages/home/Home';
 
 
 // export const router =  createHashRouter([
